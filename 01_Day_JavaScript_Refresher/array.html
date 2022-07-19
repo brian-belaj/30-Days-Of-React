@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+    <script>
+        let animals = ['dogs', 'frogs', 'ducks', 'donkeys']
+        const person = ['Brian', 'Belaj', {skills:['HTML', 'CSS', 'JQuery', 'Bootstrap']}]
+        //console.log(animals)
+        //console.log(animals.length)
+        //console.log(person)
+
+        //select a specific index of an harray
+        const cocktails = ['Paloma', 'Margarita', 'Long Island', 'Negroni', 'Spritz']
+        //console.log(cocktails[2]) //show just the third element
+        let lastIndex = cocktails.length - 1;
+        //console.log(cocktails[lastIndex])
+        cocktails[1] = 'White Russian'; //modify array element
+        //console.log(cocktails)
+        cocktails[lastIndex] = 'Pampero';
+        //console.log(cocktails)
+        const someCocktails = Array(5).fill('A Fake Cocktail') //it creates an array filled with static values
+        //console.log(someCocktails)
+        const finaList = someCocktails.concat(cocktails) //concatenates two arrays
+        //console.log(finaList)
+        let index = finaList.indexOf('White Russian'); //takes the index of the value 'White Russian'
+        /*f (index != -1){
+            console.log("We have this cocktail!")
+        } else {
+            console.log("We don't have this cocktail :(")
+        }*/
+        //this if statement check if the index exists in the array
+        //console.log(cocktails.join(" super "))
+        //const numbers = [1, 2, 3, 4, 5]
+        //console.log(numbers.slice(1)) shows the numbers from the first one (excluded)
+        const numbers = [1, 2, 3, 4, 5]
+        console.log(numbers.splice(3, 3, 7, 8, 9))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
