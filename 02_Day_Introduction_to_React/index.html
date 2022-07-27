@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>30 days of React</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="root"></div>
 
     <script
@@ -14,17 +14,67 @@
       src="https://unpkg.com/react@16/umd/react.development.js"
     ></script>
     <script
-    crossorigin
-    src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-  ></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script type="text/babel">
+      const rootElement = document.querySelector(".root");
 
-        const rootElement = document.querySelector('.root')
+      const carrozziere = {
+        nome : 'Carlo',
+        via: 'Quartolo 396'
+      }
 
-        const jsxElement = <h1>Hello Friend</h1>
-        
-        ReactDOM.render(jsxElement, rootElement)
+      const style = {border: '1px solid green', color: 'blue', background:'azure'}
+      const header = (
+        <header
+          style={style}
+        >
+          <h1>Welcome to 30 Days Of React</h1>
+          <h2>Getting Started React</h2>
+          <h3>JavaScript Library</h3>
+          <strong>Brian Belaj</strong>
+          <small>Jul 26, 2022</small>
+        </header>
+      );
+      const main = (
+        <main
+          style={{
+            border: "1 px solid green",
+            color: "blue",
+            background: "#fcb64e",
+          }}
+        >
+          <h2>This is the main element</h2>
+          <strong>And it is soooooooo</strong>
+          <strong>
+            <italic>Beautifuuuul</italic>
+          </strong>
+        </main>
+      );
+      const footer = (
+        <footer
+          style={{
+            border: "1 px solid green",
+            color: "blue",
+            background: "#81e2b8",
+          }}
+        >
+          <nav>Copyright because I like it soooooooo much</nav>
+        </footer>
+      );
+      const app = (
+        <div>
+          {header}
+          {main}
+          {footer}
+          {' '}
+          <strong>{carrozziere.nome}</strong>
+        </div>
+      );
+
+      ReactDOM.render(app, rootElement);
     </script>
-</body>
+  </body>
 </html>
