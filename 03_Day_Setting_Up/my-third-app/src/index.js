@@ -65,6 +65,7 @@ const main = (
       <ul>{techsFormatted}</ul>
       {result}
       {personAge}
+      {user}
     </div>
   </main>
 )
@@ -92,4 +93,4 @@ const app = (
 const rootElement = document.getElementById("root");
 // we render the JSX element using the ReactDOM package
 // ReactDOM has the render method and the render method takes two argument
-ReactDOM.render(user, rootElement);
+ReactDOM.render(app, rootElement);
