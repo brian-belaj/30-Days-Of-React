@@ -9,30 +9,119 @@
       name="description"
       content="Web site created using create-react-app"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>React App</title>
     <style>
-      *{
+      * {
         box-sizing: border-box;
+        font-family: "Open Sans";
       }
-      html, body{
-        margin: 0;
-        padding: 0;
+
+      img {
+        max-width: 250px;
       }
-    img{
-      max-width: 250px;
-    }
-    .title{
-      display: flex;
-      width: 100%;
-      justify-content: center;
-    }
-    .logos{
-      display: flex;
-      justify-content: space-between;
-    }
+      .title {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+      .sign {
+        display: flex;
+        justify-content: center;
+        font-family: "Open Sans";
+        font-size: 20px;
+        font-weight: 400;
+      }
+      .subscribe,
+      .inputs,
+      .button {
+        display: flex;
+        justify-content: center;
+        text-transform: uppercase;
+        font-weight: 300;
+      }
+      .inputs input {
+        margin: 2rem;
+        border: 1px solid #fff;
+        padding: 15px;
+        border-radius: 10px;
+        font-weight: 300;
+        width: auto;
+      }
+
+      .button button {
+        margin: 2rem;
+        background-color: #f37474;
+        border: 1px solid #f37474;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 500;
+        width: 20rem;
+        height: 3rem;
+      }
+      .button button:hover {
+        cursor: pointer;
+      }
+      .cardImage img {
+        border-radius: 50%;
+      }
+      .completeName {
+        display: flex;
+        justify-content: flex-start;
+      }
+      .completeName h1 {
+        margin: 1rem;
+      }
+      .completeName i {
+        align-self: center;
+        color: #2acfcf;
+        font-size: 30px;
+      }
+      .level {
+        display: flex;
+        justify-content: start;
+        margin: 1rem;
+      }
+      .level h2 {
+        font-size: 15px;
+        font-weight: 400;
+      }
+      .titleSkills {
+        display: block;
+        margin: 0 0 0 1rem;
+      }
+      .allSkills {
+        display: flex;
+        justify-content: start;
+        margin: 0 0 0 1rem;
+      }
+      .singleSkill {
+        margin: 1rem;
+        background-color: #2acfcf;
+        color: #fff;
+        width: 4rem;
+        height: 2rem;
+        text-align: center;
+        padding: 0.2rem;
+        border-radius: 10px;
+      }
+      .joined{
+        margin-left: 1rem;
+      }
+      .joined i {
+        margin: 10px;
+      }
     </style>
   </head>
   <body>
