@@ -33,12 +33,38 @@ const ReactLogo = () => {
     </div>
   );
 };
+const ColorOne = () => {
+return (
+  <div className="color1 color">#518cef</div>
+)
+}
+const ColorTwo = () => {
+  return (
+    <div className="color2 color">#3b10c4</div>
+  )
+  }
+  const ColorThree = () => {
+    return (
+      <div className="color3 color">#9aede6</div>
+    )
+    }
+    const ColorFour = () => {
+      return (
+        <div className="color4 color">#8ee763</div>
+      )
+      }
+      const ColorFive = () => {
+        return (
+          <div className="color5 color">#a30dd0</div>
+        )
+        }
 const app = (
   <div className="app">
-    <Html/>
-    <Css/>
-    <JsLogo/>
-    <ReactLogo/>
+    <ColorOne/>
+    <ColorTwo/>
+    <ColorThree/>
+    <ColorFour/>
+    <ColorFive/>
   </div>
 );
 

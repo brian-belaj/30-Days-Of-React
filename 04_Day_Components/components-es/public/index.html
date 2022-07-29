@@ -25,29 +25,50 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap"
+      rel="stylesheet"
+    />
     <style>
-      .app{
-        display: flex;
-        justify-content: center;
-        justify-content: space-between;
+      * {
+        font-family: "Nunito", sans-serif;
       }
-      .app img{
+      .app {
+        align-items: center;
+      }
+      .app img {
         width: 15rem;
+      }
+      .color1 {
+        background-color: #518cef;
+      }
+      .color2{
+        background-color: #3b10c4;
+      }
+      .color3{
+        background-color: #9aede6;
+      }
+      .color4{
+        background-color: #8ee763;
+      }
+      .color5{
+        background-color: #a30dd0;
+      }
+      .color {
+        display: flex;
+        text-align: center;
+        height: 3rem;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-weight: 400;
       }
     </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+   
   </body>
 </html>
