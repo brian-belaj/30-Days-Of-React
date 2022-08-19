@@ -1,27 +1,22 @@
-// index.js
 import React from "react";
 import ReactDOM from "react-dom";
+import asabenehImage from './images/asabeneh.jpg'
+import { useState } from "react";
 
-class App extends React.Component {
-  // declaring state
-  state = {
-    count: 0,
-  };
-  render() {
-    // accessing the state value
-    const count = this.state.count;
-    return (
-      <div className="App">
-        <h1>{count} </h1>
-        <button onClick={() => this.setState({ count: this.state.count + 1 })}>
-          Add one
-        </button>{" "}
-        <button onClick={() => this.setState({ count: this.state.count - 1 })}>
-          Minus One
-        </button>
-      </div>
-    );
-  }
+const Header = () => {
+  return (
+    <div>
+      <h1>Welcome to 30 Days of React</h1>
+    </div>
+  )
 }
+const App = (
+  state = {
+    backgroundColor: '#0F172A',
+  }
+  <div><Header style= {background}/></div>
+    
+  )
 const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
+
+ReactDOM.render(App, rootElement);
